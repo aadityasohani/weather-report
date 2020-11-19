@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2013/08/20/15/47/poppies-174276_960_720.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.6));
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+header input{
+    width:100%;
+    max-width: 280px;
+    padding: 1%;
+    border: 3px solid blueviolet;
+    border-radius:16px 0 16px 0;
+    outline:none;
+    font-size: large;
+    transition: 0.2s ease-out;
+    background-color: rgba(255,255,255,0.3);
+}
+
+header input:focus{
+    background-color: floralwhite;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    text-align: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.location .city{
+    color:rgba(255,255,255,1);  
+    font-weight: 500;
+    font-size: 150%;
+    margin-bottom: 2%;
+}
+
+.location .date{
+    color:whitesmoke;
+    font-size: 110%;
+}
+
+.current .temp{
+    color:yellow;
+    font-size: 340%;
+    font-weight: 1100;
+    margin: 2%;
+}
+
+.current .weather{
+    color:white;
+    font-size: 200%;
+}
+
+.current .high-low{
+    color:white;
+    font-size: larger;
+}
+
+
+@media only screen and (max-width:500px){
+    header{
+        margin-top:12%;
+        margin-bottom: 5%;
+    }
+}
